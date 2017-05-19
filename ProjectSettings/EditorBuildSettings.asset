@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Scene/BeatScene.unity
+    guid: 3eca8591729a543639c1b13fd0e3aacb
+  - enabled: 1
     path: Assets/_Scene/BeatBeans.unity
     guid: 31828a06ce983482880536e124ccc98b
   - enabled: 1
@@ -14,6 +17,3 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scene/RankingScene.unity
     guid: b45affb90409840fea1b0dac77c0f16c
-  - enabled: 1
-    path: Assets/_Scene/BeatScene.unity
-    guid: 3eca8591729a543639c1b13fd0e3aacb
