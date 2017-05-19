@@ -37,7 +37,11 @@ namespace VRStandardAssets.Menu
             m_InteractiveItem.OnOut -= HandleOut;
             m_SelectionRadial.OnSelectionComplete -= HandleSelectionComplete;
         }
-        
+
+		public void switchScene(string inputScene)
+		{
+			SceneManager.LoadScene(inputScene, LoadSceneMode.Single);
+		}
 
         private void HandleOver()
         {
@@ -64,8 +68,7 @@ namespace VRStandardAssets.Menu
                 StartCoroutine (ActivateButton());
         }
 
-
-        private IEnumerator ActivateButton()
+		private IEnumerator ActivateButton()
         {
             // If the camera is already fading, ignore.
             if (m_CameraFade.IsFading)
