@@ -24,7 +24,7 @@ namespace VRStandardAssets.Utils
         }
 
 
-        private void HandleCancel ()
+		public void HandleCancel ()
         {
             StartCoroutine (FadeToMenu ());
         }
