@@ -8,7 +8,7 @@ namespace VRStandardAssets.Menu
     // whilst the user is looking at it.
     public class MenuAnimator : MonoBehaviour
     {
-        [SerializeField] private int m_FrameRate = 30;                  // The number of times per second the image should change.
+        [SerializeField] private int m_FrameRate = 10;                  // The number of times per second the image should change.
         [SerializeField] private MeshRenderer m_ScreenMesh;             // The mesh renderer who's texture will be changed.
         [SerializeField] private VRInteractiveItem m_VRInteractiveItem; // The VRInteractiveItem that needs to be looked at for the textures to play.
         [SerializeField] private Texture[] m_AnimTextures;              // The textures that will be looped through.
