@@ -40,7 +40,10 @@ namespace VRStandardAssets.Menu
 
 		public void switchScene(string inputScene)
 		{
-			SceneManager.LoadScene(inputScene, LoadSceneMode.Single);
+			if (!m_CameraFade.IsFading) {
+				StartCoroutine (m_CameraFade.BeginFadeOut (true));
+				SceneManager.LoadScene (inputScene, LoadSceneMode.Single);
+			}
 		}
 
         private void HandleOver()
